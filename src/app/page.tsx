@@ -51,21 +51,22 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6">
+    <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-2">
       <div className="w-full bg-red-600 text-white text-center py-4 px-6 mb-8 rounded-md shadow-lg animate-pulse hover:animate-bounce">
-        <h2 className="text-2xl md:text-3xl font-bold uppercase">
+        <h2 className="text-xl md:text-3xl font-bold uppercase">
           ¡Descubre la Fórmula Infalible para Aprender Inglés!
         </h2>
         <p className="mt-2 text-base md:text-xl">
           Tan Efectiva que No Alcanzar tus Metas Será Casi Imposible
         </p>
       </div>
+      
 
-      <h1 className="text-2xl md:text-5xl font-extrabold text-center text-gray-800 mb-6">
-        ¡<span className="text-orange-500">Domina</span> el Inglés en <span className="text-orange-500">Meses</span> y <span className="text-orange-500">Abre Oportunidades</span> para <span className="text-orange-500">Aumentar tu Salario</span>, <span className="text-orange-500">Viajar</span> y <span className="text-orange-500">Entender Todo</span> en Inglés <span className="text-orange-500">¡Sin Barreras!</span>
+      <h1 className="text-xl md:text-5xl font-extrabold text-center text-gray-800 mb-4">
+        <span className="text-orange-500">Domina</span> el Inglés en pocos <span className="text-orange-500">Meses</span>, <span className="text-orange-500">Abre Oportunidades</span> para <span className="text-orange-500">Aumentar tu Salario</span>, <span className="text-orange-500">Viajar</span> y <span className="text-orange-500">Entender Todo</span> en Inglés <span className="text-orange-500">¡Sin Barreras!</span>
       </h1>
 
-      <p className="text-lg md:text-xl text-center text-gray-700 mb-12">
+      <p className="text-xs md:text-lg text-center text-gray-700 mb-4 px-4">
         En los siguientes minutos, descubrirás cómo dominar el inglés rápidamente con una fórmula comprobada que te llevará a resultados sorprendentes, ¡sin estrés ni frustraciones! 👇👇
       </p>
 
@@ -98,7 +99,7 @@ export default function Home() {
           <div className="cta-buttons mb-6">
             <a
               href="/entrenamiento"
-              className="bg-orange-500 text-white py-3 px-6 rounded-full text-xl font-semibold transition transform animate-pulse duration-1000 hover:bg-orange-600"
+              className=" bg-orange-500 text-white py-3 px-2  rounded-full text-lg font-semibold transition transform animate-pulse duration-1000 hover:bg-orange-600"
             >
               QUIERO UNIRME AL ENTRENAMIENTO
             </a>
@@ -154,7 +155,7 @@ export default function Home() {
       <span className="text-orange-500">BENEFICIOS EXCLUSIVOS:</span>
     </p>
     
-    <div className="bg-gradient-to-r from-red-500 to-orange-500 p-6 rounded-xl shadow-xl text-white">
+    <div className="bg-gradient-to-r from-red-500 to-orange-500 p-6 rounded-xl shadow-xl text-white font-bold">
       <ul className="space-y-4 text-lg">
         <li className="flex items-center space-x-3">
           <svg className="w-6 h-6 text-yellow-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -172,7 +173,7 @@ export default function Home() {
           <svg className="w-6 h-6 text-yellow-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fillRule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm.293-10.707a1 1 0 0 1 1.414 0L14 9.586l3.707-3.707a1 1 0 0 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0L9 12.707l-2.707-2.707a1 1 0 0 1 1.414-1.414L9 9.586l1.293-1.293z" clipRule="evenodd" />
           </svg>
-          <span>Pago en 12 cuotas sin intereses con tu tarjeta de crédito.</span>
+          <span>Pago en 12 cuotas con tu tarjeta de crédito.</span>
         </li>
         <li className="flex items-center space-x-3">
           <svg className="w-6 h-6 text-yellow-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
