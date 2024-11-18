@@ -52,7 +52,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-2">
-      <div className="w-full bg-red-600 text-white text-center py-4 px-6 mb-8 rounded-md shadow-lg animate-pulse hover:animate-bounce">
+      <div className="w-full bg-red-600 text-white text-center py-4 px-3 mb-6 rounded-md shadow-lg animate-pulse hover:animate-bounce">
         <h2 className="text-xl md:text-3xl font-bold uppercase">
           ¡Descubre la Fórmula Infalible para Aprender Inglés!
         </h2>
