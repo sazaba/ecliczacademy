@@ -62,7 +62,7 @@ export default function Home() {
       </div>
       
 
-      <h1 className="text-xl md:text-5xl font-extrabold text-center text-gray-800 mb-4">
+      <h1 className="text-2xl md:text-5xl font-extrabold text-center text-gray-800 mb-3 leading-6">
         <span className="text-orange-500">Domina</span> el Inglés en pocos <span className="text-orange-500">Meses</span>, <span className="text-orange-500">Abre Oportunidades</span> para <span className="text-orange-500">Aumentar tu Salario</span>, <span className="text-orange-500">Viajar</span> y <span className="text-orange-500">Entender Todo</span> en Inglés <span className="text-orange-500">¡Sin Barreras!</span>
       </h1>
 
