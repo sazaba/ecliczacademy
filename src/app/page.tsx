@@ -4,10 +4,11 @@ import React, { useEffect, useState, useRef } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Home() {
+  
   const [showMessage, setShowMessage] = useState(false);
   const [showCountdown, setShowCountdown] = useState(false);
 
-  const deadlineRef = useRef(null); // Usamos useRef para almacenar la fecha límite
+  const deadlineRef = useRef<number | null>(null);
   const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 0 });
 
   // Calculamos el tiempo restante en base a la fecha límite
