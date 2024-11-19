@@ -6,17 +6,15 @@ import VideoPlayer from './VideoPlayer';
 
 export default function Home() {
 
-
+  
   const [showMessage, setShowMessage] = useState(false);
   const [showCountdown, setShowCountdown] = useState(false);
-
   const deadlineRef = useRef<number | null>(null);
   const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 0 });
 
   // Calculamos el tiempo restante en base a la fecha límite
   const calculateTimeLeft = () => {
     if (!deadlineRef.current) return { hours: 0, minutes: 0, seconds: 0 };
-
     const now = new Date().getTime();
     const timeLeft = deadlineRef.current - now;
 
@@ -31,15 +29,12 @@ export default function Home() {
     return { hours, minutes, seconds };
   };
 
-  const handleVideoEnd = () => {
-    setShowMessage(true); 
-    setShowCountdown(true);
-    deadlineRef.current = new Date().getTime() + 24 * 60 * 60 * 1000; // Establece la fecha límite (24 horas)
-  };
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowMessage(true);
       setShowCountdown(true);
+      deadlineRef.current = new Date().getTime() + 24 * 60 * 60 * 1000; // Establece la fecha límite (24 horas)
     }, 10000);
   
     return () => clearTimeout(timer);
@@ -49,15 +44,13 @@ export default function Home() {
     if (showCountdown) {
       const timer = setInterval(() => {
         setTimeLeft(calculateTimeLeft());
-        handleVideoEnd(); // Actualizamos el tiempo restante
+        
       }, 1000);
 
       return () => clearInterval(timer); // Limpiamos el temporizador cuando el componente se desmonta o showCountdown cambia
     }
   }, [showCountdown]);
-
-  
-
+ 
   return (
     <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-2">
       <div className="w-full bg-red-600 text-white text-center py-4 px-3 mb-6 rounded-md shadow-lg animate-pulse hover:animate-bounce">
