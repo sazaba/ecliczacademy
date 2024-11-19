@@ -2,9 +2,11 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import VideoPlayer from './VideoPlayer'; 
 
 export default function Home() {
-  
+
+
   const [showMessage, setShowMessage] = useState(false);
   const [showCountdown, setShowCountdown] = useState(false);
 
@@ -34,21 +36,27 @@ export default function Home() {
     setShowCountdown(true);
     deadlineRef.current = new Date().getTime() + 24 * 60 * 60 * 1000; // Establece la fecha límite (24 horas)
   };
-
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowMessage(true);
+      setShowCountdown(true);
+    }, 10000);
+  
+    return () => clearTimeout(timer);
+  }, []);
   // Iniciar el temporizador solo cuando se muestre la cuenta regresiva
   useEffect(() => {
     if (showCountdown) {
       const timer = setInterval(() => {
-        setTimeLeft(calculateTimeLeft()); // Actualizamos el tiempo restante
+        setTimeLeft(calculateTimeLeft());
+        handleVideoEnd(); // Actualizamos el tiempo restante
       }, 1000);
 
       return () => clearInterval(timer); // Limpiamos el temporizador cuando el componente se desmonta o showCountdown cambia
     }
   }, [showCountdown]);
 
-  const simulateVideoEnd = () => {
-    handleVideoEnd();
-  };
+  
 
   return (
     <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-2">
@@ -63,7 +71,7 @@ export default function Home() {
       
 
       <h1 className="text-2xl md:text-5xl font-extrabold text-center text-gray-800 mb-3 leading-6">
-        <span className="text-orange-500">Domina</span> el Inglés en pocos <span className="text-orange-500">Meses</span>, <span className="text-orange-500">Abre Oportunidades</span> para <span className="text-orange-500">Aumentar tu Salario</span>, <span className="text-orange-500">Viajar</span> y <span className="text-orange-500">Entender Todo</span> en Inglés <span className="text-orange-500">¡Sin Barreras!</span>
+        <span className="text-orange-500">Domina</span> el Inglés en poco <span className="text-orange-500">Tiempo</span>, <span className="text-orange-500">Abre Oportunidades</span> para <span className="text-orange-500">Aumentar tu Salario</span>, <span className="text-orange-500">Viajar</span> y <span className="text-orange-500">Entender Todo</span> en Inglés <span className="text-orange-500">¡Sin Barreras!</span>
       </h1>
 
       <p className="text-xs md:text-lg text-center text-gray-700 mb-4 px-4">
@@ -71,21 +79,8 @@ export default function Home() {
       </p>
 
       <div className="w-full max-w-4xl aspect-video">
-        <iframe
-          src="https://vturb.com/tu-video-id"
-          title="Video Sales Letter"
-          width="100%"
-          height="100%"
-          className="rounded-lg shadow-lg"
-          allow="autoplay; fullscreen"
-          frameBorder="0"
-        />
+      <VideoPlayer /> 
       </div>
-
-      {/* Botón para simular el fin del video */}
-      <button onClick={simulateVideoEnd} className="mt-6 bg-blue-500 text-white py-2 px-4 rounded">
-        Simular fin de video
-      </button>
 
       {showMessage && (
         <div className="message-container mt-6 bg-white p-6 shadow-lg rounded-lg text-center">
