@@ -35,7 +35,7 @@ export default function Home() {
       setShowMessage(true);
       setShowCountdown(true);
       deadlineRef.current = new Date().getTime() + 24 * 60 * 60 * 1000; // Establece la fecha límite (24 horas)
-    }, 330000);
+    }, 300000);
   
     return () => clearTimeout(timer);
   }, []);
@@ -103,17 +103,23 @@ export default function Home() {
             Si realmente quieres aumentar tu salario, viajar al extranjero y entender contenido en inglés sin barreras, este curso es para ti.
           </p>
 
-          <div className="offer-details mb-6">
-            <p className="font-semibold text-lg text-gray-800">
-              Este es el último curso de inglés que necesitarás. Aprende de manera efectiva, rápida y sin complicaciones.
-            </p>
-            <p className="text-xl text-orange-500 font-bold mt-4">
-              Oferta Especial: ¡Accede a este curso VITALICIO por solo 80 USD!
-            </p>
-            <p className="text-sm text-gray-600 mt-2">
-              (Disponible solo por las próximas 24 horas)
-            </p>
-          </div>
+          <div className="offer-details mb-6 bg-gradient-to-r from-orange-100 via-white to-orange-100 p-6 rounded-lg shadow-lg">
+  <p className="font-semibold text-lg text-gray-800">
+    Este es el último curso de inglés que necesitarás. Aprende de manera efectiva, rápida y sin complicaciones.
+  </p>
+  <div className="flex items-center justify-between mt-4">
+    <p className="text-lg text-gray-500 line-through">
+      Antes: <span className="font-bold">$1000 USD</span>
+    </p>
+    <p className="text-2xl text-orange-500 font-bold">
+      Ahora: <span className="text-green-600">$80 USD</span>
+    </p>
+  </div>
+  <p className="text-sm text-gray-600 mt-4 italic">
+    (Disponible solo por las próximas 24 horas)
+  </p>
+</div>
+
 
           {showCountdown && (
             <div className="w-full max-w-md mx-auto bg-gradient-to-r from-red-600 to-orange-500 text-white rounded-lg p-6 shadow-lg text-center mb-8">
