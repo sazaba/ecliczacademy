@@ -74,6 +74,11 @@ export default function Home() {
       <div className="w-full max-w-4xl aspect-video">
       <VideoPlayer /> 
       </div>
+      <div className="w-full mt-5 bg-blue-950 text-white text-center py-4 px-3 mb-6 rounded-md shadow-lg animate-pulse hover:animate-bounce">
+        <h2 className="text-xl md:text-3xl font-bold uppercase">
+          ¡Espera a que finalice el video para desbloquear la oferta!
+        </h2>
+      </div>
 
       {showMessage && (
         <div className="message-container mt-6 bg-white p-6 shadow-lg rounded-lg text-center">
