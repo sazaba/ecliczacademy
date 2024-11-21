@@ -1,5 +1,6 @@
 import './globals.css'; // Ajusta la ruta para que apunte correctamente a src/app/globals.css
 import Script from 'next/script';
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: 'Next.js',
@@ -50,7 +51,10 @@ export default function RootLayout({
           />
         </noscript>
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+        </body>
     </html>
   );
 }
