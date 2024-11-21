@@ -78,6 +78,7 @@ export default function Home() {
         <h2 className="text-xl md:text-3xl font-bold uppercase">
           ¡Espera a que finalice el video para desbloquear la oferta!
         </h2>
+        <p>👇👇🏻👇🏼👇🏽👇🏾👇🏿</p>
       </div>
 
       {showMessage && (
