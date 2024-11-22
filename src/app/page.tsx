@@ -10,8 +10,8 @@ import testimonyOne from './images/T1.webp'
 export default function Home() {
 
   
-  const [showMessage, setShowMessage] = useState(true);
-  const [showCountdown, setShowCountdown] = useState(true);
+  const [showMessage, setShowMessage] = useState(false);
+  const [showCountdown, setShowCountdown] = useState(false);
   const deadlineRef = useRef<number | null>(null);
   const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 0 });
 
