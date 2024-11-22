@@ -10,8 +10,8 @@ import testimonyOne from './images/T1.webp'
 export default function Home() {
 
   
-  const [showMessage, setShowMessage] = useState(true);
-  const [showCountdown, setShowCountdown] = useState(true);
+  const [showMessage, setShowMessage] = useState(false);
+  const [showCountdown, setShowCountdown] = useState(false);
   const deadlineRef = useRef<number | null>(null);
   const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 0 });
 
@@ -38,7 +38,7 @@ export default function Home() {
       setShowMessage(true);
       setShowCountdown(true);
       deadlineRef.current = new Date().getTime() + 24 * 60 * 60 * 1000; // Establece la fecha límite (24 horas)
-    }, 300000);
+    }, 1000);
   
     return () => clearTimeout(timer);
   }, []);
@@ -89,10 +89,11 @@ export default function Home() {
       <VideoPlayer /> 
       </div>
       <div className="w-full mt-5 bg-blue-950 text-white text-center py-4 px-3 mb-6 rounded-md shadow-lg animate-pulse hover:animate-bounce">
+      <p>☝️☝️☝️☝️☝️☝️</p>
         <h2 className="text-xl md:text-3xl font-bold uppercase">
-          ¡Espera a que finalice el video para desbloquear la oferta!
+          ¡Mira el Video y Descubre la Formula Para Aprender!
         </h2>
-        <p>👇👇🏻👇🏼👇🏽👇🏾👇🏿</p>
+        
       </div>
 
       {showMessage && (
