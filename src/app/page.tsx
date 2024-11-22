@@ -1,14 +1,17 @@
 "use client"; // Marca este archivo como componente de cliente
 
 import React, { useEffect, useState, useRef } from 'react';
+import Image from 'next/image';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import VideoPlayer from './VideoPlayer'; 
+import testimonyOne from './images/T1.webp'
+
 
 export default function Home() {
 
   
-  const [showMessage, setShowMessage] = useState(false);
-  const [showCountdown, setShowCountdown] = useState(false);
+  const [showMessage, setShowMessage] = useState(true);
+  const [showCountdown, setShowCountdown] = useState(true);
   const deadlineRef = useRef<number | null>(null);
   const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 0 });
 
@@ -119,6 +122,17 @@ export default function Home() {
     (Disponible solo por las próximas 24 horas)
   </p>
 </div>
+
+<div className="flex flex-col items-center justify-center ">
+        <Image 
+        
+          src={testimonyOne}
+          alt="Descripción de la primera imagen" 
+          width={800} // Ajusta el tamaño según sea necesario
+          height={800}
+          quality={80} // Ajusta la calidad según sea necesario        
+        />
+      </div>
 
 
           {showCountdown && (
