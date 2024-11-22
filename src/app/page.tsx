@@ -38,7 +38,7 @@ export default function Home() {
       setShowMessage(true);
       setShowCountdown(true);
       deadlineRef.current = new Date().getTime() + 24 * 60 * 60 * 1000; // Establece la fecha límite (24 horas)
-    }, 1000);
+    }, 10000);
   
     return () => clearTimeout(timer);
   }, []);
@@ -48,7 +48,7 @@ export default function Home() {
       const timer = setInterval(() => {
         setTimeLeft(calculateTimeLeft());
         
-      }, 10000);
+      }, 1000);
 
       return () => clearInterval(timer); // Limpiamos el temporizador cuando el componente se desmonta o showCountdown cambia
     }
