@@ -128,8 +128,8 @@ export default function Home() {
         
           src={testimonyOne}
           alt="Descripción de la primera imagen" 
-          width={800} // Ajusta el tamaño según sea necesario
-          height={800}
+          width={1000} // Ajusta el tamaño según sea necesario
+          height={1000}
           quality={80} // Ajusta la calidad según sea necesario        
         />
       </div>
