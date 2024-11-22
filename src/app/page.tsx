@@ -66,13 +66,13 @@ export default function Home() {
       </div>
       
 
-      <h1 className="text-2xl md:text-5xl font-extrabold text-center text-black mb-6">
+      <h1 className="text-2xl md:text-5xl font-extrabold text-center text-black mb-6 leading-6">
   <span className="text-black underline">¡Transforma</span> tu vida 
-  <span className="bg-orange-500 text-white px-3 py-1 rounded inline-block underline">aprendiendo</span> Inglés!<br /><br />
+  <span className="bg-orange-500 text-white px-2 py-1 rounded inline-block underline">aprendiendo</span> Inglés!<br /><br />
   <span className="text-black underline">Domina </span>  
-  <span className="bg-orange-500 text-white px-3 py-1 rounded inline-block underline">tiempo récord</span>, 
-  <span className="bg-orange-500 text-white px-3 py-1 rounded inline-block underline">multiplica tus oportunidades</span> y 
-  <span className="bg-orange-500 text-white px-3 py-1 rounded inline-block underline">consigue el éxito</span> que mereces.
+  <span className="bg-orange-500 text-white px-2 py-1 rounded inline-block underline">tiempo récord</span>, 
+  <span className="bg-orange-500 text-white px-1 py-1 rounded inline-block underline">multiplica tus oportunidades</span> y 
+  <span className="bg-orange-500 text-white px-1 py-1 rounded inline-block underline">consigue el éxito</span> que mereces.
 </h1>
 
 
