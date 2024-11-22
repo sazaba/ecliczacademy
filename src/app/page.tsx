@@ -10,8 +10,8 @@ import testimonyOne from './images/T1.webp'
 export default function Home() {
 
   
-  const [showMessage, setShowMessage] = useState(false);
-  const [showCountdown, setShowCountdown] = useState(false);
+  const [showMessage, setShowMessage] = useState(true);
+  const [showCountdown, setShowCountdown] = useState(true);
   const deadlineRef = useRef<number | null>(null);
   const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 0 });
 
@@ -66,9 +66,20 @@ export default function Home() {
       </div>
       
 
-      <h1 className="text-2xl md:text-5xl font-extrabold text-center text-gray-800 mb-3 leading-6">
-        <span className="text-orange-500">Domina</span> el Inglés en poco <span className="text-orange-500">Tiempo</span>, <span className="text-orange-500">Abre Oportunidades</span> para <span className="text-orange-500">Aumentar tu Salario</span>, <span className="text-orange-500">Viajar</span> y <span className="text-orange-500">Entender Todo</span> en Inglés <span className="text-orange-500">¡Sin Barreras!</span>
-      </h1>
+      <h1 className="text-2xl md:text-5xl font-extrabold text-center text-black mb-6">
+  <span className="text-black underline">¡Transforma</span> tu vida 
+  <span className="bg-orange-500 text-white px-3 py-1 rounded inline-block underline">aprendiendo</span> Inglés!<br /><br />
+  <span className="text-black underline">Domina </span>  
+  <span className="bg-orange-500 text-white px-3 py-1 rounded inline-block underline">tiempo récord</span>, 
+  <span className="bg-orange-500 text-white px-3 py-1 rounded inline-block underline">multiplica tus oportunidades</span> y 
+  <span className="bg-orange-500 text-white px-3 py-1 rounded inline-block underline">consigue el éxito</span> que mereces.
+</h1>
+
+
+
+
+
+
 
       <p className="text-xs md:text-lg text-center text-gray-700 mb-4 px-4">
         En los siguientes minutos, descubrirás cómo dominar el inglés rápidamente con una fórmula comprobada que te llevará a resultados sorprendentes, ¡sin estrés ni frustraciones! 👇👇
@@ -123,13 +134,12 @@ export default function Home() {
   </p>
 </div>
 
-<div className="flex flex-col items-center justify-center ">
+<div className="flex flex-col items-center justify-center">
         <Image 
-        
           src={testimonyOne}
           alt="Descripción de la primera imagen" 
-          width={1000} // Ajusta el tamaño según sea necesario
-          height={1000}
+          width={950} // Ajusta el tamaño según sea necesario
+          height={950}
           quality={80} // Ajusta la calidad según sea necesario        
         />
       </div>
