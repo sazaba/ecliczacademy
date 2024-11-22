@@ -48,7 +48,7 @@ export default function Home() {
       const timer = setInterval(() => {
         setTimeLeft(calculateTimeLeft());
         
-      }, 1000);
+      }, 6000);
 
       return () => clearInterval(timer); // Limpiamos el temporizador cuando el componente se desmonta o showCountdown cambia
     }
