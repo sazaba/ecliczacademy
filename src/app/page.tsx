@@ -108,7 +108,7 @@ export default function Home() {
           <div className="cta-buttons mb-6">
   <a
     href="https://pay.hotmart.com/N93858012D?checkoutMode=10"
-    className="bg-orange-500 text-white py-3 px-2 rounded-full text-lg font-semibold transition transform animate-pulse duration-1000 hover:bg-orange-600"
+    className="bg-green-500 text-white py-3 px-2 rounded-full text-lg font-semibold transition transform animate-pulse duration-1000 hover:bg-orange-600"
   >
     QUIERO UNIRME AL ENTRENAMIENTO
   </a>
@@ -178,7 +178,7 @@ export default function Home() {
   <a
     href="https://pay.hotmart.com/N93858012D?checkoutMode=10"
     
-    className="bg-orange-500 text-white py-3 px-2 rounded-full text-lg font-semibold transition transform animate-pulse duration-1000 hover:bg-orange-600"
+    className="bg-green-500 text-white py-3 px-2 rounded-full text-lg font-semibold transition transform animate-pulse duration-1000 hover:bg-orange-600"
   >
     QUIERO UNIRME AL ENTRENAMIENTO
   </a>
