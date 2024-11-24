@@ -18,7 +18,7 @@ const Bonus = () => {
           {/* Bono 1 */}
           <div className="bg-white text-gray-800 rounded-lg p-6 shadow-lg">
             <h3 className="text-2xl font-semibold text-red-600 mb-3">
-              1️⃣ Guía: "Cómo preparar tu CV y entrevistas en inglés"
+              1️⃣ Guía: Cómo preparar tu CV y entrevistas en inglés
             </h3>
             <p className="leading-relaxed">
               👉 Destaca en procesos laborales internacionales. Aprende a redactar un currículum profesional, responder preguntas comunes en entrevistas y mostrar seguridad en inglés para triunfar en el ámbito laboral.
@@ -40,7 +40,7 @@ const Bonus = () => {
           {/* Bono 3 */}
           <div className="bg-white text-gray-800 rounded-lg p-6 shadow-lg">
             <h3 className="text-2xl font-semibold text-red-600 mb-3">
-              3️⃣ Taller exclusivo: "Cómo superar el TOEFL/IELTS con éxito" 🎯
+              3️⃣ Taller exclusivo: Cómo superar el TOEFL/IELTS con éxito 🎯
             </h3>
             <p className="leading-relaxed">
               👉 Estrategias y tips prácticos para destacar en estas certificaciones. Te enseñaremos cómo abordar cada sección del examen con seguridad y obtener una calificación sobresaliente.
