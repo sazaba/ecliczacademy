@@ -116,9 +116,7 @@ export default function Home() {
             />
           </div>
           
-          <Testimonios
-        
-      />
+          <Testimonios/>
           <Cta/>
           <HowToDoIt/>
           <Cta/>
