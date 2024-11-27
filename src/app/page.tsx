@@ -12,6 +12,7 @@ import Cta from './Cta';
 import Image from 'next/image';
 import M5 from "./images/M5.webp"
 import M1 from "./images/M1.webp"
+import Platform from './Platform';
 
 
 
@@ -120,13 +121,14 @@ export default function Home() {
           <Cta/>
           <HowToDoIt/>
           <Cta/>
-          <div className="mt-3">
+          <div className="mt-3 mb-3">
             <Image
               src={M1} // Cambia esta ruta por la de tu imagen
               alt="Persona que dio un testimonio"
               className="w-full rounded-xl"
             />
           </div>
+          <Platform/>
           <FAQ/>
           <Cta/>
           <Bonus/>
