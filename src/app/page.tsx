@@ -65,45 +65,37 @@ export default function Home() {
  
   return (
     <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-2">
-      <div className="w-full bg-red-600 text-white text-center py-4 px-3 mb-6 rounded-md shadow-lg  animate-pulse">
-        <h2 className="text-xl md:text-3xl font-bold uppercase">
-          ¡Descubre la Fórmula Infalible para Aprender Inglés!
-        </h2>
-        <p className="mt-2 text-base md:text-xl">
-          Tan Efectiva que No Alcanzar tus Metas Será Casi Imposible
-        </p>
-      </div>
-      
+      <div className="bg-gradient-to-br from-blue-500 to-blue-700 text-white text-center py-8 px-6 mb-10 rounded-lg shadow-lg">
+  <h2 className="text-3xl md:text-5xl font-extrabold uppercase tracking-wide">
+    ¡Domina el inglés y <span className="text-yellow-300">transforma</span> tu vida!
+  </h2>
+  <p className="mt-4 text-lg md:text-xl font-light">
+    Aprende más rápido, supera tus límites y accede a oportunidades que cambiarán tu futuro.
+  </p>
+</div>
 
-      <h1 className="text-2xl md:text-5xl font-extrabold text-center text-black mb-6 leading-6">
-  <span className="text-black underline">¡Transforma</span> tu vida 
-  <span className="bg-orange-500 text-white px-2 py-1 rounded inline-block underline">aprendiendo</span> Inglés!<br /><br />
-  <span className="text-black underline">Domina </span>  
-  <span className="bg-orange-500 text-white px-2 py-1 rounded inline-block underline">tiempo récord</span>, 
-  <span className="bg-orange-500 text-white px-1 py-1 rounded inline-block underline">multiplica tus oportunidades</span> y 
-  <span className="bg-orange-500 text-white px-1 py-1 rounded inline-block underline">consigue el éxito</span> que mereces.
-</h1>
+<section className="text-center max-w-4xl mx-auto px-6 mb-12">
+  <h1 className="text-3xl md:text-6xl font-bold text-gray-900 leading-snug mb-6">
+    ¿Estás listo para <span className="text-blue-600 underline">dar el salto</span>? <br />
+    Nuestra metodología probada <span className="text-yellow-400">te llevará al éxito</span>.
+  </h1>
+  <p className="text-base md:text-lg text-gray-700 mb-8">
+    En solo unos minutos, descubrirás el sistema que ha ayudado a cientos de personas a hablar inglés con confianza y sin estrés. ¡El cambio que necesitas comienza aquí! 👇
+  </p>
+  <div className="w-full max-w-4xl aspect-video mx-auto rounded-md shadow-md overflow-hidden">
+    <VideoPlayer />
+  </div>
+</section>
 
+<div className="bg-yellow-400 text-black text-center py-6 px-5 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+  <h3 className="text-xl md:text-3xl font-bold">
+    🎁 Al final del video, descubre cómo obtener <span className="underline">tu sorpresa exclusiva</span>.
+  </h3>
+  <p className="mt-2 text-sm md:text-base">
+    Aprovecha esta oportunidad única para empezar tu camino hacia el éxito.
+  </p>
+</div>
 
-
-
-
-
-
-      <p className="text-xs md:text-lg text-center text-gray-700 mb-4 px-4">
-        En los siguientes minutos, descubrirás cómo dominar el inglés rápidamente con una fórmula comprobada que te llevará a resultados sorprendentes, ¡sin estrés ni frustraciones! 👇👇
-      </p>
-
-      <div className="w-full max-w-4xl aspect-video">
-      <VideoPlayer /> 
-      </div>
-      <div className="w-full mt-5 bg-indigo-600 text-white text-center py-4 px-3 mb-6 rounded-md shadow-lg animate-pulse hover:animate-bounce">
-      <p>☝️☝️☝️☝️☝️☝️</p>
-        <h2 className="text-lg md:text-3xl font-bold uppercase">
-        No te lo pierdas, al final del video encontrarás una sorpresa:🎁!
-        </h2>
-        
-      </div>
 
       {showMessage && (
         <div className="message-container mt-6 bg-white  shadow-lg rounded-lg text-center">
