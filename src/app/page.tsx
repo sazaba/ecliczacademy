@@ -99,6 +99,7 @@ export default function Home() {
 
       {showMessage && (
         <div className="message-container mt-6 bg-white  shadow-lg rounded-lg text-center">
+          <Cta/>
           <Dolores/>
           <Cta/>
           <div className="mt-3">
