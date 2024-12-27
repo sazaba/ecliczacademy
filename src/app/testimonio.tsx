@@ -26,6 +26,11 @@ function Testimonials() {
               video: "https://www.youtube.com/embed/cCaLitbF21s",
               name: "Juan",
               text: "Desde que aprendí inglés, mi carrera ha despegado y tengo nuevas oportunidades increíbles."
+            },
+            {
+              video: "https://www.youtube.com/embed/F8pEzoa79sg",
+              name: "Christian",
+              text: "Finally I'm able to speak fluent."
             }
           ].map((testimonial, index) => (
             <div
