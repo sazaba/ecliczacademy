@@ -7,7 +7,7 @@ const VideoPlayer = () => {
     script.src = 'https://scripts.converteai.net/2ffe5a85-c74f-4a8b-a275-5f727ac3597d/players/676a1e64572299dbc2d8f8cc/player.js';
     script.async = true;
     document.head.appendChild(script);
-    
+
     return () => {
       // Limpiar el script al desmontar el componente
       document.head.removeChild(script);

@@ -75,10 +75,11 @@ export default function Home() {
 </div>
 
 <section className="text-center max-w-4xl mx-auto px-6 mb-12">
-  <h1 className="text-3xl md:text-6xl font-bold text-gray-900 leading-snug mb-6">
-    ¿Estás listo para <span className="text-blue-600 underline">dar el salto</span>? <br />
-    Nuestra metodología probada <span className="text-yellow-400">te llevará al éxito</span>.
-  </h1>
+<h1 className="text-3xl md:text-6xl font-bold text-gray-900 leading-snug mb-6">
+  ¿Vas a seguir <span className="text-blue-600 underline">perdiendo dinero</span>? <br />
+  ¿ <span className="text-yellow-400">Dejando pasar las mejores oportunidades</span> laborales y académicas?
+</h1>
+
   <p className="text-base md:text-lg text-gray-700 mb-8">
     En solo unos minutos, descubrirás el sistema que ha ayudado a cientos de personas a hablar inglés con confianza y sin estrés. ¡El cambio que necesitas comienza aquí! 👇
   </p>
