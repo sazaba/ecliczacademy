@@ -30,7 +30,7 @@ function Testimonials() {
             {
               video: "https://www.youtube.com/embed/F8pEzoa79sg",
               name: "Christian",
-              text: "Finally I'm able to speak fluent."
+              text: "Finally, I'm able to speak fluently."
             }
           ].map((testimonial, index) => (
             <div
