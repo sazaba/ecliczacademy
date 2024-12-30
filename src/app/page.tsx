@@ -65,25 +65,31 @@ export default function Home() {
  
   return (
     <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-2">
-      <div className="bg-gradient-to-br from-blue-500 to-blue-700 text-white text-center py-8 px-6 mb-10 rounded-lg shadow-lg">
+      
+      <div className="bg-gradient-to-br from-orange-400 to-red-500 text-white text-center py-8 px-6 mb-10 rounded-lg shadow-lg">
   <h2 className="text-3xl md:text-5xl font-extrabold uppercase tracking-wide">
-    ¡Domina el inglés y <span className="text-yellow-300">transforma</span> tu vida!
+    ¿Por qué seguir <span className="text-yellow-300">perdiendo tiempo</span> cuando puedes aprender inglés rápidamente?
   </h2>
-  <p className="mt-4 text-lg md:text-xl font-light">
-    Aprende más rápido, supera tus límites y accede a oportunidades que cambiarán tu futuro.
-  </p>
 </div>
+
+
 
 <section className="text-center max-w-4xl mx-auto px-6 mb-12">
 <h1 className="text-3xl md:text-6xl font-bold text-gray-900 leading-snug mb-6">
-  ¿Vas a seguir <span className="text-blue-600 underline">perdiendo dinero</span>? <br />
-  ¿ <span className="text-yellow-400">Dejando pasar las mejores oportunidades</span> laborales y académicas?
+  ¡El inglés <span className="text-orange-500 underline">no puede esperar</span> más! <br />
+  <span className="text-white bg-gradient-to-r from-orange-400 to-red-500 px-2 rounded-lg shadow-md">
+    Apréndelo rápido
+  </span> y alcanza tus metas en tiempo récord.
 </h1>
 
-  <p className="text-base md:text-lg text-gray-700 mb-8">
+
+
+
+
+  {/* <p className="text-base md:text-lg text-gray-700 mb-8">
     En solo unos minutos, descubrirás el sistema que ha ayudado a cientos de personas a hablar inglés con confianza y sin estrés. ¡El cambio que necesitas comienza aquí! 👇
-  </p>
-  <div className="w-full max-w-4xl aspect-video mx-auto rounded-md shadow-md overflow-hidden">
+  </p> */}
+  <div className="w-full  aspect-video mx-auto rounded-md shadow-md overflow-hidden">
     <VideoPlayer />
   </div>
 </section>
