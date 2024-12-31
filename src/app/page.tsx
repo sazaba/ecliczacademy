@@ -13,6 +13,8 @@ import Image from 'next/image';
 import M5 from "./images/M5.webp"
 import M1 from "./images/M1.webp"
 import Platform from './Platform';
+import GuaranteeBanner from './GuaranteeBanner';
+import FloatingUrgency from './FloatingUrgency';
 
 
 
@@ -107,6 +109,7 @@ export default function Home() {
       {showMessage && (
         <div className="message-container mt-6 bg-white  shadow-lg rounded-lg text-center">
           <Cta/>
+          <FloatingUrgency/>
           <Dolores/>
           <Cta/>
           <div className="mt-3">
@@ -131,17 +134,18 @@ export default function Home() {
           <Platform/>
           <FAQ/>
           <Cta/>
+          <GuaranteeBanner/>
           <Bonus/>
           
 
-          {showCountdown && (
+          {/* {showCountdown && (
   <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white py-2 px-4 rounded-full shadow-lg text-center text-xs z-50 animate-pulse">
     ⏳ ¡Oferta Especial! Tiempo restante:{" "}
     <span className="font-bold">
       {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
     </span>
   </div>
-)}
+)} */}
 
         </div>
       )}
