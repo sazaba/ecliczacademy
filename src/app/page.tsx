@@ -49,7 +49,7 @@ export default function Home() {
       setShowMessage(true);
       setShowCountdown(true);
       deadlineRef.current = new Date().getTime() + 24 * 60 * 60 * 1000; // Establece la fecha límite (24 horas)
-    }, 15000);
+    }, 20000);
   
     return () => clearTimeout(timer);
   }, []);
@@ -68,35 +68,28 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-2">
       
-      <div className="bg-gradient-to-br from-orange-400 to-red-500 text-white text-center py-8 px-6 mb-10 rounded-lg shadow-lg">
-  <h2 className="text-3xl md:text-5xl font-extrabold uppercase tracking-wide">
-    ¿Por qué seguir <span className="text-yellow-300">perdiendo tiempo</span> cuando puedes aprender inglés rápidamente?
+      <div className="bg-gradient-to-br from-orange-400 to-red-500 text-white text-center py-8 mb-10 rounded-lg shadow-lg">
+      <h2 className="text-3xl md:text-5xl font-extrabold uppercase tracking-wide">
+    ¿Por qué esperar <span className="text-yellow-300">años</span> para aprender inglés?
   </h2>
 </div>
 
+<section className="text-center max-w-4xl mx-auto ">
+  <h1 className="text-2xl md:text-5xl font-bold text-gray-900 leading-loose mb-14">
+    ¡Domina el inglés rápido! <br />
+    <span className="text-white bg-gradient-to-r from-orange-400 to-red-500 py-1 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+      Métodos inmersivos
+    </span><br/>
+    <span className="text-white bg-gradient-to-r from-red-500 to-orange-400 py-1 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+     y resultados en semanas.
+    </span>
+  </h1>
 
-
-<section className="text-center max-w-4xl mx-auto px-6 mb-12">
-<h1 className="text-3xl md:text-6xl font-bold text-gray-900 leading-snug mb-6">
-  ¡El inglés <span className="text-orange-500 underline">no puede esperar</span> más! <br />
-  <span className="text-white bg-gradient-to-r from-orange-400 to-red-500 px-2 rounded-lg shadow-md">
-    Apréndelo rápido
-  </span> y alcanza tus metas en tiempo récord.
-</h1>
-
-
-
-
-
-  {/* <p className="text-base md:text-lg text-gray-700 mb-8">
-    En solo unos minutos, descubrirás el sistema que ha ayudado a cientos de personas a hablar inglés con confianza y sin estrés. ¡El cambio que necesitas comienza aquí! 👇
-  </p> */}
-  <div className="w-full  aspect-video mx-auto rounded-md shadow-md overflow-hidden">
+  <div className="w-full  aspect-video mx-auto rounded-md shadow-md overflow-hidden mb-3">
     <VideoPlayer />
   </div>
-</section>
 
-<div className="bg-yellow-400 text-black text-center py-6 px-5 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+  <div className="bg-yellow-400 text-black text-center mb-16 py-6 px-5 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
   <h3 className="text-xl md:text-3xl font-bold">
     🎁 Al final del video, descubre cómo obtener <span className="underline">tu sorpresa exclusiva</span>.
   </h3>
@@ -105,12 +98,33 @@ export default function Home() {
   </p>
 </div>
 
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-1 px-2">
+  <div className="bg-gradient-to-br from-blue-500 to-teal-500 text-white p-4 shadow-lg flex flex-col items-center justify-center rounded-lg transform animate-bounce delay-100">
+    <span className="text-3xl mb-2">🇪🇸</span>
+    <p className="text-sm md:text-base font-semibold">Aprende rápido como con el español.</p>
+  </div>
+  <div className="bg-gradient-to-br from-blue-500 to-teal-500 text-white p-4 shadow-lg flex flex-col items-center justify-center rounded-lg transform animate-bounce delay-300">
+    <span className="text-3xl mb-2">🌍</span>
+    <p className="text-sm md:text-base font-semibold">Práctica inmersiva en escenarios reales.</p>
+  </div>
+  <div className="bg-gradient-to-br from-blue-500 to-teal-500 text-white p-4 shadow-lg flex flex-col items-center justify-center rounded-lg transform animate-bounce delay-500">
+    <span className="text-3xl mb-2">🤖</span>
+    <p className="text-sm md:text-base font-semibold">IA que acelera tu aprendizaje.</p>
+  </div>
+  <div className="bg-gradient-to-br from-blue-500 to-teal-500 text-white p-4 shadow-lg flex flex-col items-center justify-center rounded-lg transform animate-bounce delay-700">
+    <span className="text-3xl mb-2">⏱️</span>
+    <p className="text-sm md:text-base font-semibold">Habla inglés en tiempo récord.</p>
+  </div>
+</div>
+
+
+</section>
 
       {showMessage && (
         <div className="message-container mt-6 bg-white  shadow-lg rounded-lg text-center">
           <Cta/>
           <FloatingUrgency/>
-          <Dolores/>
+          <Testimonios/>
           <Cta/>
           <div className="mt-3">
             <Image
@@ -120,7 +134,7 @@ export default function Home() {
             />
           </div>
           
-          <Testimonios/>
+          <Dolores/>
           <Cta/>
           <HowToDoIt/>
           <Cta/>
