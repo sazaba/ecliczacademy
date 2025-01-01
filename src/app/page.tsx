@@ -111,7 +111,8 @@ export default function Home() {
         <div className="message-container mt-6 bg-white  shadow-lg rounded-lg text-center">
           <Cta/>
           <FloatingUrgency/>
-          <Dolores/>
+          <Testimonios/>
+          
           <Cta/>
           <div className="mt-3">
             <Image
@@ -121,7 +122,7 @@ export default function Home() {
             />
           </div>
           
-          <Testimonios/>
+          <Dolores/>
           <Cta/>
           <HowToDoIt/>
           <Cta/>
