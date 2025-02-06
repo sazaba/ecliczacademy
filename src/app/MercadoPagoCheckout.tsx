@@ -67,7 +67,11 @@ const MercadoPagoCheckout: React.FC = () => {
     loadMercadoPagoScript();
   }, []);
 
-  return <div id="mp-button-container"></div>;
+  return (
+    <div id="mp-button-container" className="flex justify-center items-center mt-4 mb-8">
+      {/* Aseguramos que el contenedor esté bien centrado y tenga algo de espacio */}
+    </div>
+  );
 };
 
 export default MercadoPagoCheckout;
