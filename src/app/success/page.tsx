@@ -1,13 +1,15 @@
+// app/success/page.tsx
+"use client"; // Para que useEffect funcione correctamente
+
 import React, { useEffect } from "react";
 
 const SuccessPage: React.FC = () => {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-
-    const status = params.get("status"); // Estado del pago
-    const amount = params.get("amount"); // Monto pagado
-    const email = params.get("payer_email"); // Email del comprador
-    const eventID = Date.now().toString(); // ID único para el evento
+    const status = params.get("status");
+    const amount = params.get("amount");
+    const email = params.get("payer_email");
+    const eventID = Date.now().toString();
 
     if (status === "approved") {
       fetch("/api/facebook-purchase", {
