@@ -106,9 +106,9 @@ export default function Home() {
   <p className="mt-2 text-sm md:text-base">
     Aprovecha esta oportunidad única para empezar tu camino hacia el éxito.
   </p>
-  
+  <MercadoPagoCheckout/>
 </div>
-
+<MercadoPagoCheckout/>
 
       {showMessage && (
         <div className="message-container mt-6 bg-white  shadow-lg rounded-lg text-center">
