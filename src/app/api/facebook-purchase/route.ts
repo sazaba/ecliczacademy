@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
                             },
                         },
                     ],
-                    test_event_code: "TEST12345", // Código de prueba para desarrollo
+                    test_event_code: "TEST6624", // Código de prueba para desarrollo
                 }),
             }
         );
