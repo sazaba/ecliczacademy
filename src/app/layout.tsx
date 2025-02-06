@@ -59,6 +59,10 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://scripts.converteai.net" />
         <link rel="dns-prefetch" href="https://images.converteai.net" />
         <link rel="dns-prefetch" href="https://api.vturb.com.br" />
+        <Script
+          src="https://sdk.mercadopago.com/js/v2"
+          strategy="beforeInteractive"
+        />
       </head>
       <body>
         {children}

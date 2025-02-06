@@ -16,6 +16,8 @@ import Platform from './Platform';
 import GuaranteeBanner from './GuaranteeBanner';
 import FloatingUrgency from './FloatingUrgency';
 import Cta from './Cta';
+import PromotionBanner from './PromotionBanner';
+import MercadoPagoCheckout from './MercadoPagoCheckout';
 
 
 
@@ -50,7 +52,7 @@ export default function Home() {
       setShowMessage(true);
       setShowCountdown(true);
       deadlineRef.current = new Date().getTime() + 24 * 60 * 60 * 1000; // Establece la fecha límite (24 horas)
-    }, 20000);
+    }, 200);
   
     return () => clearTimeout(timer);
   }, []);
@@ -104,11 +106,14 @@ export default function Home() {
   <p className="mt-2 text-sm md:text-base">
     Aprovecha esta oportunidad única para empezar tu camino hacia el éxito.
   </p>
+  
 </div>
 
 
       {showMessage && (
         <div className="message-container mt-6 bg-white  shadow-lg rounded-lg text-center">
+          <MercadoPagoCheckout/>
+          <PromotionBanner/>
           <Cta/>
           <FloatingUrgency/>
           <Testimonios/>
