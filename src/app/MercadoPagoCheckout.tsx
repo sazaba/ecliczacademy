@@ -68,8 +68,12 @@ const MercadoPagoCheckout: React.FC = () => {
   }, []);
 
   return (
-    <div id="mp-button-container" className="flex justify-center items-center mt-4 mb-8">
-      {/* Aseguramos que el contenedor esté bien centrado y tenga algo de espacio */}
+    <div 
+      id="mp-button-container" 
+      className="w-full h-16 flex justify-center items-center bg-white border-2 border-gray-300 mt-4 mb-8"
+      style={{ minHeight: "50px", zIndex: 999 }} // Aseguramos que tenga altura mínima y visibilidad
+    >
+      {/* Contenedor del botón */}
     </div>
   );
 };
