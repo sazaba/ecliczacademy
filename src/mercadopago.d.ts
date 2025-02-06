@@ -1,4 +1,3 @@
-// mercadopago.d.ts
 interface Window {
-    MercadoPago: any; // Agregar MercadoPago al objeto global 'window' con tipo 'any'
+    MercadoPago: object; // Usar 'object' si MercadoPago es un objeto y no una cadena
 }
