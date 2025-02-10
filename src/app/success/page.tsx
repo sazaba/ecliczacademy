@@ -31,7 +31,7 @@ const SuccessPage: React.FC = () => {
         <h1 className="text-2xl font-bold text-gray-800">¡Gracias por tu compra!</h1>
         <p className="mt-4 text-green-600">Tu pago ha sido aprobado.</p>
         <a
-          href="https://drive.google.com/file/d/1YNj2W7DHYKnKkNZzVofxvTjm98OErtL9/view?usp=sharing"
+          href="https://drive.google.com/file/d/10VZcn5XWhAxSPKJbaG17cGSt9MIG2dMF/view?usp=sharing"
           target="_blank"
   rel="noopener noreferrer"
           // Cambia la ruta al archivo PDF real
