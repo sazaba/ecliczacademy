@@ -13,6 +13,11 @@ function Testimonials() {
 
         <div className="flex flex-wrap justify-center gap-8">
           {[{
+              video: "https://www.youtube.com/embed/gjTy7AbqTj8",
+              name: "Cristian",
+              text: "Logré Alcanzar el nivel B2. ¡Estoy Fascinado!"
+            },
+            {
               video: "https://www.youtube.com/embed/aTTfZ1uTL6c",
               name: "Andrea",
               text: "Nunca pensé que aprender inglés podría ser tan sencillo y emocionante. ¡Este curso lo hizo posible!"

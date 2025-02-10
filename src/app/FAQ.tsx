@@ -5,7 +5,7 @@ const FAQ = () => {
         {/* Sección: ¿Cómo son las clases? */}
         <div>
   <h2 className="text-3xl text-indigo-800 md:text-4xl font-extrabold text-center mb-10">
-    ¿Cómo son las clases? 📚
+    ¿Que aprendere en este e-book? 📚
   </h2>
   <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
     {/* Tarjeta 1 - Nativos de todo el mundo */}
@@ -85,7 +85,7 @@ const FAQ = () => {
                 🤔 ¿Qué nivel necesito para empezar?
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed text-center">
-                ¡Ninguno! Este curso está diseñado para principiantes absolutos. No necesitas experiencia previa con el inglés. Si ya sabes algo, genial, tendrás una ventaja, pero no es un requisito.
+                ¡Ninguno! Este e-book está diseñado para principiantes absolutos. No necesitas experiencia previa con el inglés. Si ya sabes algo, genial, tendrás una ventaja, pero no es un requisito.
               </p>
             </div>
             {/* Pregunta 3 */}

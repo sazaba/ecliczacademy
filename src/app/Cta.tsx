@@ -1,28 +1,28 @@
 import React from "react";
 
-const Cta = () => {
+const Cta = ({ text = "¡Quiero aprender inglés!" }) => {
   return (
-    <div className="cta-buttons mt-3 flex justify-center">
+    <div className="cta-buttons mt-6 flex justify-center">
       <a
         href="https://mpago.li/13JwwNx"
-        className="bg-green-500 text-white py-3 px-6 rounded-full text-base md:text-lg font-semibold transition-transform duration-500 ease-in-out hover:bg-green-700 w-full sm:w-auto text-center animate-persuade"
+        className="bg-green-500 shadow-black text-white py-4 px-5 rounded-full text-lg md:text-xl font-bold shadow-sm transform transition-all duration-500 ease-in-out hover:bg-orange-600 hover:scale-105 hover:shadow-2xl w-full sm:w-auto text-center animate-bounce-persuade"
+        aria-label="Botón para adquirir el curso de inglés"
       >
-        ¡SI QUIERO APRENDER INGLÉS!
+        {text}
       </a>
 
-      {/* Animación personalizada */}
       <style jsx>{`
-        @keyframes persuade {
+        @keyframes bounce-persuade {
           0%, 100% {
-            transform: rotate(-3deg);
+            transform: translateY(0) rotate(-2deg);
           }
           50% {
-            transform: rotate(3deg);
+            transform: translateY(-5px) rotate(2deg);
           }
         }
 
-        .animate-persuade {
-          animation: persuade 1s infinite;
+        .animate-bounce-persuade {
+          animation: bounce-persuade 1.5s infinite;
         }
       `}</style>
     </div>

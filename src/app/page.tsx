@@ -8,7 +8,6 @@ import Testimonios from './testimonio';
 import HowToDoIt from './HowToDoIt';
 import FAQ from './FAQ';
 import Bonus from './Bonus';
-
 import Image from 'next/image';
 import M5 from "./images/M5.webp"
 import M1 from "./images/M1.webp"
@@ -16,7 +15,7 @@ import Platform from './Platform';
 import GuaranteeBanner from './GuaranteeBanner';
 import FloatingUrgency from './FloatingUrgency';
 import Cta from './Cta';
-import PromotionBanner from './PromotionBanner';
+import SalesPsychologyComponent from './SalesPsychologyComponent';
 
 
 
@@ -98,24 +97,13 @@ export default function Home() {
   </div>
 </section>
 
-<div className="bg-yellow-400 text-black text-center py-6 px-5 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-  <h3 className="text-xl md:text-3xl font-bold">
-    🎁 Al final del video, descubre cómo obtener <span className="underline">tu sorpresa exclusiva</span>.
-  </h3>
-  <p className="mt-2 text-sm md:text-base">
-    Aprovecha esta oportunidad única para empezar tu camino hacia el éxito.
-  </p>
- 
-</div>
       {showMessage && (
         <div className="message-container mt-6 bg-white  shadow-lg rounded-lg text-center">
-        
-          <PromotionBanner/>
-          <Cta/>
+          <SalesPsychologyComponent/>
+          <Cta text="Quiero mi e-book por 9.99 USD"/>
           <FloatingUrgency/>
           <Testimonios/>
-          
-          <Cta/>
+          <Cta text="Quiero mi e-book por 9.99 USD"/>
           <div className="mt-3">
             <Image
               src={M5} // Cambia esta ruta por la de tu imagen
@@ -123,11 +111,10 @@ export default function Home() {
               className="w-full rounded-xl"
             />
           </div>
-          
-          <Dolores/>
-          <Cta/>
+          <Dolores />
+          <Cta text="¡Quiero mi e-book ahora!"/>
           <HowToDoIt/>
-          <Cta/>
+          <Cta text="¡Quiero empezar hoy!"/>
           <div className="mt-3 mb-3">
             <Image
               src={M1} // Cambia esta ruta por la de tu imagen
@@ -137,7 +124,7 @@ export default function Home() {
           </div>
           <Platform/>
           <FAQ/>
-          <Cta/>
+          <Cta text="Quiero mi e-book por 9.99 USD"/>
           <GuaranteeBanner/>
           <Bonus/>
           
