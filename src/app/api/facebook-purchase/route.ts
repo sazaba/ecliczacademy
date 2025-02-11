@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
                             },
                             custom_data: {
                                 value: amount,
-                                currency: "USD", // Establecer la moneda
+                                currency: "COP", // Establecer la moneda
                             },
                         },
                     ],
