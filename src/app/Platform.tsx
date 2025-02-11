@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Platform: React.FC = () => {
   return (
-    <section className="bg-gradient-to-b from-[#0F172A] to-[#1E293B] text-white py-20 px-8">
+    <section className="bg-gradient-to-b from-[#0F172A] to-[#1E293B] text-white py-20 px-8 rounded-2xl shadow-black shadow-lg">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Contenido */}
         <motion.div 
