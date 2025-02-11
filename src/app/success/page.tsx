@@ -27,6 +27,7 @@ const SuccessPage: React.FC = () => {
 
       setIsSubmitted(true); // Habilita el botón de descarga
     } catch (err) {
+      console.error("Error al enviar la conversión:", err);
       setError("Hubo un problema. Inténtalo de nuevo.");
     } finally {
       setLoading(false);
