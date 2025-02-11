@@ -16,6 +16,7 @@ import GuaranteeBanner from './GuaranteeBanner';
 import FloatingUrgency from './FloatingUrgency';
 import Cta from './Cta';
 import SalesPsychologyComponent from './SalesPsychologyComponent';
+import FAQSection from './FAQSection';
 
 
 
@@ -68,34 +69,58 @@ export default function Home() {
  
   return (
     <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-2">
-      
-      <div className="bg-gradient-to-br from-orange-400 to-red-500 text-white text-center py-8 px-2 mb-10 rounded-lg shadow-lg">
-  <h2 className="text-2xl md:text-5xl font-extrabold uppercase tracking-wide">
-    ¿Por qué seguir <span className="text-yellow-300">perdiendo tiempo</span> cuando puedes aprender inglés rápidamente?
-  </h2>
+
+
+<div className="bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white text-center py-12 px-6 rounded-xl shadow-lg shadow-black max-w-4xl mx-auto">
+  {/* Título Impactante */}
+  <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
+    <span className="block text-5xl sm:text-7xl md:text-8xl font-extrabold text-yellow-400 animate-pulse drop-shadow-lg">
+     Domina el Inglés de Una Vez por Todas <br/>🔥
+    </span>
+    <span className="text-lg sm:text-xl md:text-2xl font-medium mt-4 block text-gray-300">
+      Vive una experiencia <span className="text-yellow-400 font-bold">100% inmersiva</span> para hablar como un nativo y pensar como un experto.
+    </span>
+  </h1>
+
+  {/* Video Destacado */}
+  <div className="w-full max-w-5xl mx-auto aspect-video rounded-lg shadow-lg overflow-hidden mt-10 bg-gray-700 border-2 border-gray-600 hover:scale-105 transition-transform duration-300">
+  <VideoPlayer />
 </div>
 
 
+  {/* Subtítulo Destacado */}
+  <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-white leading-relaxed mt-8">
+    💡 El método que utilizan empresarios y líderes globales  
+    <br />
+    🚀 <span className="text-yellow-400 underline">Acelera tu aprendizaje 8 veces más</span> con estrategias probadas y resultados garantizados.
+  </h2>
+</div>
 
-<section className="text-center max-w-4xl mx-auto px-6 mb-12">
-<h1 className="text-3xl md:text-6xl font-bold text-gray-900 leading-snug mb-6">
-  ¡El inglés <span className="text-orange-500 underline">no puede esperar</span> más! <br />
-  <span className="text-white bg-gradient-to-r from-orange-400 to-red-500 px-2 rounded-lg shadow-md">
-    Apréndelo rápido
-  </span> y alcanza tus metas en tiempo récord.
-</h1>
-
-
-
-
-
-  {/* <p className="text-base md:text-lg text-gray-700 mb-8">
-    En solo unos minutos, descubrirás el sistema que ha ayudado a cientos de personas a hablar inglés con confianza y sin estrés. ¡El cambio que necesitas comienza aquí! 👇
-  </p> */}
-  <div className="w-full  aspect-video mx-auto rounded-md shadow-md overflow-hidden">
-    <VideoPlayer />
-  </div>
-</section>
+    
+    
+    
+    <section className="text-center max-w-4xl mx-auto px-2 mb-5">
+    
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-1 mt-6">
+      <div className="bg-gradient-to-br from-blue-600 to-teal-600 text-white p-4 shadow-md shadow-black flex flex-col items-center justify-center rounded-lg transform animate-slide-up delay-100 duration-500">
+        <span className="text-4xl mb-2">🇪🇸</span>
+        <p className="text-sm md:text-base font-semibold">Aprende como dominaste el español, de forma intuitiva.</p>
+      </div>
+      <div className="bg-gradient-to-br from-blue-600 to-teal-600 text-white p-4 shadow-md shadow-black flex flex-col items-center justify-center rounded-lg transform animate-slide-up delay-200 duration-500">
+        <span className="text-4xl mb-2">🌍</span>
+        <p className="text-sm md:text-base font-semibold">Accede a prácticas inmersivas con escenarios reales.</p>
+      </div>
+      <div className="bg-gradient-to-br from-blue-600 to-teal-600 text-white p-4 shadow-md shadow-black flex flex-col items-center justify-center rounded-lg transform animate-slide-up delay-300 duration-500">
+        <span className="text-4xl mb-2">🤖</span>
+        <p className="text-sm md:text-base font-semibold">Tecnología avanzada para un aprendizaje personalizado.</p>
+      </div>
+      <div className="bg-gradient-to-br from-blue-600 to-teal-600 text-white p-4 shadow-md shadow-black flex flex-col items-center justify-center rounded-lg transform animate-slide-up delay-400 duration-500">
+        <span className="text-4xl mb-2">⏱️</span>
+        <p className="text-sm md:text-base font-semibold">Resultados visibles en tiempo récord.</p>
+      </div>
+    </div>
+    
+    </section>
 
       {showMessage && (
         <div className="message-container mt-6 bg-white  shadow-lg rounded-lg text-center">
@@ -124,6 +149,7 @@ export default function Home() {
           </div>
           <Platform/>
           <FAQ/>
+          <FAQSection/>
           <Cta text="Quiero mi e-book por 9.99 USD"/>
           <GuaranteeBanner/>
           <Bonus/>

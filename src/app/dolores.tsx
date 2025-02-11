@@ -2,7 +2,7 @@ import React from "react";
 
 const Dolores = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-100 to-white py-16 px-6 md:px-24">
+    <section className="bg-gradient-to-b from-gray-100 to-white py-3 px-6 md:px-24">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-5xl font-black mb-10 text-gray-900 tracking-tight leading-tight">
           ¡No Dejes Que El Inglés Te Detenga!

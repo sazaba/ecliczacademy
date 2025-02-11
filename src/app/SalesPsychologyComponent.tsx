@@ -32,28 +32,39 @@ const SalesPsychologyComponent = () => {
   }, []);
 
   return (
-    <div className="text-center mt-3 py-8 px-6 md:px-12 bg-gradient-to-r from-teal-500 to-blue-600 text-white rounded-lg shadow-lg">
-      <h2 className="text-4xl font-bold mb-4">¡Oferta Limitada!⏳</h2>
-      <p className="text-lg mb-4">
-        Por menos de $1.500 Pesos Colombianos diarios!
+    <div className="text-center  py-10 px-8 md:px-14 bg-gradient-to-r from-indigo-700 to-purple-600 text-white rounded-2xl shadow-lg shadow-black">
+      <h2 className="text-4xl font-extrabold mb-5 uppercase tracking-wide animate-pulse">
+        ¡Oferta Exclusiva por Tiempo Limitado! 🚀 
+      </h2>
+      <p className="text-lg md:text-xl mb-6 font-medium">
+        ¡Aprende inglés por menos de $1.500 COP diarios!
       </p>
-      <div className="flex justify-center items-center space-x-8 mb-6">
-        <span className="text-3xl  text-yellow-300 font-semibold">
-          <span className="text-4xl">Antes: </span ><br/>$89.99 
-        </span>
-        <span className="text-4xl font-bold text-green-400">
-          <span className="text-4xl">¡Ahora: </span><br/>$9.99
-        </span>
+
+      <div className="flex justify-center items-center space-x-10 mb-8">
+        <div className="text-2xl md:text-3xl font-semibold text-gray-300 line-through">
+          <p>Antes:</p>
+          <span className="text-gray-400">$89.99</span>
+        </div>
+        <div className="text-4xl md:text-5xl font-bold text-green-400 bg-white px-6 py-3 rounded-xl shadow-md">
+          <p>Ahora:</p>
+          <span>$9.99</span>
+        </div>
       </div>
-      <div className="bg-white text-gray-900 p-4 rounded-lg shadow-md mb-8">
-        <h3 className="text-2xl font-semibold mb-2">¡Aprovecha esta oferta única!</h3>
-        <p className="text-base mb-4">
-          Otros E-books similares tienen un costo promedio entre $80 y $120 Dolares. 
+
+      <div className="bg-white text-gray-900 p-6 rounded-xl shadow-md mb-6">
+        <h3 className="text-2xl font-bold mb-3 text-center">
+          🔥 ¡No dejes pasar esta oportunidad!
+        </h3>
+        <p className="text-lg text-gray-700 mb-4">
+          Otros ebooks similares cuestan entre <span className="font-bold">$80 y $120 USD</span>.
         </p>
-        <p className="text-lg text-red-600 font-bold">
-          Oferta válida solo por las próximas <span className="text-yellow-400">{timeLeft} horas</span>
+        <p className="text-xl font-bold text-red-600">
+          Esta oferta termina en: 
+          <span className="text-yellow-500 text-2xl ml-2">{timeLeft}</span>
         </p>
       </div>
+      
+
     </div>
   );
 };

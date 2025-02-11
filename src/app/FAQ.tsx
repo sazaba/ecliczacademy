@@ -59,51 +59,7 @@ const FAQ = () => {
 
 
         {/* Sección: Preguntas Frecuentes */}
-        <div>
-          <h2 className="text-3xl text-indigo-800 md:text-4xl font-bold text-center mb-8">
-            Preguntas Frecuentes
-          </h2>
-          <div className="grid gap-8 md:grid-cols-1">
-            {/* Pregunta 1 */}
-            <div className="bg-gray-800 rounded-lg p-6">
-              <h3 className="text-yellow-400 text-lg font-bold mb-4 text-center">
-                ⏱️ ¿Cuánto tiempo tomará aprender inglés?
-              </h3>
-              <p className="text-gray-300 text-lg leading-relaxed text-center">
-                Todo depende de tu dedicación. Según nuestros estudiantes, estos son los tiempos promedio:
-              </p>
-              <ul className="list-disc list-inside text-gray-400 mt-4 space-y-2">
-                <li>En 3 meses dedicando 2 horas al día.</li>
-                <li>En 6 meses estudiando 1 hora diaria.</li>
-                <li>En 12 meses con solo 30 minutos diarios.</li>
-                <li>En 24 meses con apenas 15 minutos al día.</li>
-              </ul>
-            </div>
-            {/* Pregunta 2 */}
-            <div className="bg-gray-800 rounded-lg p-6">
-              <h3 className="text-yellow-400 text-lg font-bold mb-4 text-center">
-                🤔 ¿Qué nivel necesito para empezar?
-              </h3>
-              <p className="text-gray-300 text-lg leading-relaxed text-center">
-                ¡Ninguno! Este e-book está diseñado para principiantes absolutos. No necesitas experiencia previa con el inglés. Si ya sabes algo, genial, tendrás una ventaja, pero no es un requisito.
-              </p>
-            </div>
-            {/* Pregunta 3 */}
-            <div className="bg-gray-800 rounded-lg p-6">
-              <h3 className="text-yellow-400 text-lg font-bold mb-4 text-center">
-                🌟 ¿Qué nivel alcanzaré al finalizar?
-              </h3>
-              <p className="text-gray-300 text-lg leading-relaxed text-center">
-                Al completar el programa, tendrás una <span className="text-yellow-400 font-semibold">fluidez conversacional</span> que te permitirá:
-              </p>
-              <ul className="list-disc list-inside text-gray-400 mt-4 space-y-2">
-                <li>Comprender inglés cotidiano sin esfuerzo ni traducciones mentales.</li>
-                <li>Leer y entender textos fácilmente.</li>
-                <li>Escribir y tener conversaciones fluidas sin miedo a cometer errores.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </section>
   );
