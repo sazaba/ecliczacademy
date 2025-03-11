@@ -32,22 +32,22 @@ const SalesPsychologyComponent = () => {
   }, []);
 
   return (
-    <div className="text-center  py-10 px-8 md:px-14 bg-gradient-to-r from-indigo-700 to-purple-600 text-white rounded-2xl shadow-lg shadow-black">
-      <h2 className="text-4xl font-extrabold mb-5 uppercase tracking-wide animate-pulse">
+    <div className="  mt-2 text-center  py-10 px-2 md:px-14 bg-gradient-to-r from-indigo-700 to-purple-600 text-white rounded-2xl shadow-lg shadow-black">
+      <h2 className="text-3xl font-extrabold mb-5 uppercase tracking-wide animate-pulse">
         ¡Oferta Exclusiva por Tiempo Limitado! 🚀 
       </h2>
       <p className="text-lg md:text-xl mb-6 font-medium">
-        ¡Aprende inglés por menos de $1.500 COP diarios!
+        ¡Aprende inglés por menos de $9.000 COP diarios! menos de lo que vale un cafe en Juan Valdez ☕
       </p>
 
-      <div className="flex justify-center items-center space-x-10 mb-8">
+      <div className="flex justify-center space-x-2 items-center mb-8">
         <div className="text-2xl md:text-3xl font-semibold text-gray-300 line-through">
           <p>Antes:</p>
-          <span className="text-gray-400">$89.99</span>
+          <span className="text-gray-400">$4.467.000</span>
         </div>
-        <div className="text-4xl md:text-5xl font-bold text-green-400 bg-white px-6 py-3 rounded-xl shadow-md">
+        <div className="text-2xl md:text-5xl font-bold text-green-400 bg-white px-6 py-3 rounded-xl shadow-md">
           <p>Ahora:</p>
-          <span>$9.99</span>
+          <span>$350.000</span>
         </div>
       </div>
 
@@ -56,7 +56,7 @@ const SalesPsychologyComponent = () => {
           🔥 ¡No dejes pasar esta oportunidad!
         </h3>
         <p className="text-lg text-gray-700 mb-4">
-          Otros ebooks similares cuestan entre <span className="font-bold">$80 y $120 USD</span>.
+          Otros cursos similares cuestan entre <span className="font-bold">$800.000 y $1.200.000</span>.
         </p>
         <p className="text-xl font-bold text-red-600">
           Esta oferta termina en: 

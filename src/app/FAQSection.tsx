@@ -23,7 +23,7 @@ const faqs = [
     question: "🤔 ¿Qué nivel necesito para empezar?",
     answer: (
       <p className="text-gray-300">
-        ¡Ninguno! Este e-book está diseñado para **principiantes absolutos**. No necesitas experiencia
+        ¡Ninguno! Este Curso está diseñado para **principiantes absolutos**. No necesitas experiencia
         previa con el inglés. Si ya sabes algo, genial, tendrás una ventaja, pero no es un requisito.
       </p>
     ),
@@ -53,7 +53,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="bg-gray-900 text-white py-20 px-6 md:px-16 rounded-2xl shadow-black shadow-lg">
+    <section className="bg-gray-900 text-white py-20 px-6 md:px-16 rounded-b-xl shadow-black shadow-lg">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

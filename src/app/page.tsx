@@ -9,7 +9,7 @@ import HowToDoIt from './HowToDoIt';
 import FAQ from './FAQ';
 import Bonus from './Bonus';
 import Image from 'next/image';
-import M5 from "./images/M5.webp"
+import BackgroundImage from "@/app/images/Rocket2.webp";
 import M1 from "./images/M1.webp"
 import Platform from './Platform';
 import GuaranteeBanner from './GuaranteeBanner';
@@ -17,6 +17,8 @@ import FloatingUrgency from './FloatingUrgency';
 import Cta from './Cta';
 import SalesPsychologyComponent from './SalesPsychologyComponent';
 import FAQSection from './FAQSection';
+import Monica from './Monica';
+import UrgencyTag from './UrgencyTag';
 
 
 
@@ -70,76 +72,62 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-2">
 
-
-<div className="bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white text-center py-12 px-6 rounded-xl shadow-lg shadow-black max-w-4xl mx-auto">
-  {/* Título Impactante */}
-  <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
-    <span className="block text-5xl sm:text-7xl md:text-8xl font-extrabold text-yellow-400 animate-pulse drop-shadow-lg">
-     Domina el Inglés de Una Vez por Todas <br/>🔥
-    </span>
-    <span className="text-lg sm:text-xl md:text-2xl font-medium mt-4 block text-gray-300">
-      Vive una experiencia <span className="text-yellow-400 font-bold">100% inmersiva</span> para hablar como un nativo y pensar como un experto.
-    </span>
-  </h1>
-
-  {/* Video Destacado */}
-  <div className="w-full max-w-5xl mx-auto aspect-video rounded-lg shadow-lg overflow-hidden mt-10 bg-gray-700 border-2 border-gray-600 hover:scale-105 transition-transform duration-300">
-  <VideoPlayer />
-</div>
-
-
-  {/* Subtítulo Destacado */}
-  <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-white leading-relaxed mt-8">
-    💡 El método que utilizan empresarios y líderes globales  
-    <br />
-    🚀 <span className="text-yellow-400 underline">Acelera tu aprendizaje 8 veces más</span> con estrategias probadas y resultados garantizados.
-  </h2>
-</div>
-
+    <div
+    style={{
+      backgroundImage: `url(${BackgroundImage.src})`,
+    }}
+    className="relative bg-cover bg-center text-white text-center py-12 px-6 rounded-xl shadow-lg shadow-black max-w-4xl mx-auto"
+  >
+    {/* Capa Oscura */}
+    <div className="absolute inset-0 bg-black bg-opacity-70 rounded-xl"></div>
     
+    <div className="relative z-10">
+      {/* Título Impactante */}
+      <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
+        <span className="block text-5xl sm:text-7xl md:text-8xl font-extrabold text-yellow-400 animate-pulse drop-shadow-lg">
+         Aprende Inglés en solo 3 Meses <br/> 🚀
+        </span>
+        <span className="text-lg sm:text-xl md:text-2xl font-medium mt-4 block text-gray-300">
+        ⭐⭐⭐⭐⭐ <br/>Únete a + de 3000 personas que ya hablan inglés  
+        </span>
+      </h1>
     
+      {/* Video Destacado */}
+      <div className="w-full max-w-5xl mx-auto aspect-video rounded-lg shadow-lg overflow-hidden mt-10 bg-gray-700 border-2 border-gray-600 hover:scale-105 transition-transform duration-300">
+      <VideoPlayer />
+    </div>
     
-    <section className="text-center max-w-4xl mx-auto px-2 mb-5">
-    
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-1 mt-6">
-      <div className="bg-gradient-to-br from-blue-600 to-teal-600 text-white p-4 shadow-md shadow-black flex flex-col items-center justify-center rounded-lg transform animate-slide-up delay-100 duration-500">
-        <span className="text-4xl mb-2">🇪🇸</span>
-        <p className="text-sm md:text-base font-semibold">Aprende como dominaste el español, de forma intuitiva.</p>
-      </div>
-      <div className="bg-gradient-to-br from-blue-600 to-teal-600 text-white p-4 shadow-md shadow-black flex flex-col items-center justify-center rounded-lg transform animate-slide-up delay-200 duration-500">
-        <span className="text-4xl mb-2">🌍</span>
-        <p className="text-sm md:text-base font-semibold">Accede a prácticas inmersivas con escenarios reales.</p>
-      </div>
-      <div className="bg-gradient-to-br from-blue-600 to-teal-600 text-white p-4 shadow-md shadow-black flex flex-col items-center justify-center rounded-lg transform animate-slide-up delay-300 duration-500">
-        <span className="text-4xl mb-2">🤖</span>
-        <p className="text-sm md:text-base font-semibold">Tecnología avanzada para un aprendizaje personalizado.</p>
-      </div>
-      <div className="bg-gradient-to-br from-blue-600 to-teal-600 text-white p-4 shadow-md shadow-black flex flex-col items-center justify-center rounded-lg transform animate-slide-up delay-400 duration-500">
-        <span className="text-4xl mb-2">⏱️</span>
-        <p className="text-sm md:text-base font-semibold">Resultados visibles en tiempo récord.</p>
+      {/* Subtítulo Destacado */}
+      <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-white leading-relaxed mt-8">
+      
+        🧠 <span className="text-yellow-400 underline">Entrena tu cerebro para aprender inglés como un niño</span> y dominarlo en meses, no años.
+      </h2>
       </div>
     </div>
     
-    </section>
 
       {showMessage && (
         <div className="message-container mt-6 bg-white  shadow-lg rounded-lg text-center">
-          <SalesPsychologyComponent/>
-          <Cta text="Quiero mi e-book por 9.99 USD"/>
+          <Cta />
           <FloatingUrgency/>
           <Testimonios/>
-          <Cta text="Quiero mi e-book por 9.99 USD"/>
-          <div className="mt-3">
-            <Image
-              src={M5} // Cambia esta ruta por la de tu imagen
-              alt="Persona que dio un testimonio"
-              className="w-full rounded-xl"
-            />
-          </div>
+          <Cta />
+          <SalesPsychologyComponent/>
           <Dolores />
-          <Cta text="¡Quiero mi e-book ahora!"/>
           <HowToDoIt/>
-          <Cta text="¡Quiero empezar hoy!"/>
+          <Cta />
+          <UrgencyTag/>
+          <Platform/>
+          <FAQ/>
+          <FAQSection/>
+          <Cta />
+          <UrgencyTag/>
+          <GuaranteeBanner/>
+          <Bonus/>
+          <Monica/>
+          <Cta />
+          <UrgencyTag/>
+         
           <div className="mt-3 mb-3">
             <Image
               src={M1} // Cambia esta ruta por la de tu imagen
@@ -147,12 +135,10 @@ export default function Home() {
               className="w-full rounded-xl"
             />
           </div>
-          <Platform/>
-          <FAQ/>
-          <FAQSection/>
-          <Cta text="Quiero mi e-book por 9.99 USD"/>
-          <GuaranteeBanner/>
-          <Bonus/>
+          
+         
+          
+          
           
 
           {showCountdown && (
