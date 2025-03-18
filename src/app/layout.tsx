@@ -51,10 +51,10 @@ export default function RootLayout({
             src="https://www.facebook.com/tr?id=951295253720594&ev=PageView&noscript=1"
           />
         </noscript>
-        <link rel="preload" href="https://scripts.converteai.net/fd8b82e3-999d-46ce-8650-2e66bb34b4e4/players/67cf938ef35ac4c93bf28634/player.js" as="script"/>
+        <link rel="preload" href="https://scripts.converteai.net/a542e1c9-7d9f-4708-bb88-692953c8b4a6/players/67d8fc0fb5e657217ff954d4/player.js" as="script"/>/
 <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script"/>
-<link rel="preload" href="https://images.converteai.net/fd8b82e3-999d-46ce-8650-2e66bb34b4e4/players/67cf938ef35ac4c93bf28634/thumbnail.jpg" as="image"/>
-<link rel="preload" href="https://cdn.converteai.net/fd8b82e3-999d-46ce-8650-2e66bb34b4e4/67cf9383e6f09f99375d8f23/main.m3u8" as="fetch"/>
+<link rel="preload" href="https://images.converteai.net/a542e1c9-7d9f-4708-bb88-692953c8b4a6/players/67d8fc0fb5e657217ff954d4/thumbnail.jpg" as="image"/>
+<link rel="preload" href="https://cdn.converteai.net/a542e1c9-7d9f-4708-bb88-692953c8b4a6/67d8fc040d0cccc557740d03/main.m3u8" as="fetch"/>
 <link rel="dns-prefetch" href="https://cdn.converteai.net"/>
 <link rel="dns-prefetch" href="https://scripts.converteai.net"/>
 <link rel="dns-prefetch" href="https://images.converteai.net"/>
